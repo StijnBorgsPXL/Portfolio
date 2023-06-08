@@ -1,0 +1,511 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+/* Header */
+header {
+    box-shadow: 0 0 20px 0 black;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #F9F9F9;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    font-family: "Comic Sans MS";
+    color: #171056;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header #navbar a {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#current_page {
+    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: #D262EE;
+}
+
+header img {
+    width: 4rem;
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+
+/* Main */
+body {
+    background-image: url("assets/background.png");
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+main #up_button a img {
+    width: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+main #up_button a img:hover {
+    width: 5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+/* #home article */
+main #home {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+}
+
+main #home_tekst {
+    width: 50%;
+}
+
+main #home h1 {
+    color: #171056;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+main #home h2 {
+    color: #171056;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+main #home h2 span {
+    color: #39A2F5;
+    font-family: "Comic Sans MS";
+}
+
+main #home h3 {
+    color: #D262EE;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+main #home #knop a {
+    width: 9rem;
+    padding: 0.35rem;
+    color: white;
+    background: #171056;
+    border-radius: 1rem;
+    border: none;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    box-shadow: 0 0 0.5rem 0 #171056;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+main #home #knop a:hover {
+    background: #39A2F5;
+    color: #171056;
+    box-shadow: 0 0 2rem 0 #504d8f;
+}
+
+main #home_tekst img {
+    width: 2.5rem;
+}
+
+main #home_foto {
+    width: 50%;
+}
+
+main #home_foto img {
+    width: 75%;
+    margin-left: 25%;
+    margin-top: -3rem;
+}
+
+/* #wiebenik article */
+main #wiebenik {
+    display: flex;
+    flex-direction: row;
+}
+
+main #wiebenik_uitleg {
+    width: 50%;
+    margin-left: 5%;
+    padding-right: 5%;
+}
+
+main #wiebenik_uitleg h2 {
+    color: #39A2F5;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+main #wiebenik_uitleg h3 {
+    color: #39A2F5;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+main #wiebenik_uitleg p {
+    font-weight: bold;
+}
+
+main #wiebenik_uitleg p .paars {
+    color: #D262EE;
+
+}
+
+main #wiebenik_uitleg p .blauw {
+    color: #39A2F5;
+}
+
+main #wiebenik_foto {
+    width: 50%;
+}
+
+main #wiebenik_foto img {
+    width: 100%;
+    height: 100%;
+}
+/* Pop up buttons */
+main button {
+    outline: none;
+    border: 0;
+    background: none;
+}
+
+.popup{ /* Pop up venster */
+    width: 400px;
+    background: white;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 2rem;
+    color: #171056;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 20px 20px 40px rgba(60,60,150,0.25);
+}
+
+.open-popup{ /* hoe opent pop up? */
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button{ /* knop in pop up */
+    width: 9rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0.35rem;
+    background-color: #171056;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0 #171056;
+    font-family: "Comic Sans MS";
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup button:hover {
+    background: #39A2F5;
+    color: #171056;
+    box-shadow: 0 0 2rem 0 #504d8f;
+}
+
+.popup2{ /* Pop up venster */
+    width: 400px;
+    background: white;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 2rem;
+    color: #171056;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 20px 20px 40px rgba(60,60,150,0.25);
+}
+
+.open-popup2{ /* hoe opent pop up? */
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup2 button{ /* knop in pop up */
+    width: 9rem;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 0.35rem;
+    background-color: #171056;
+    color: white;
+    border: 0;
+    outline: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.5rem 0 #171056;
+    font-family: "Comic Sans MS";
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup2 button:hover {
+    background: #39A2F5;
+    color: #171056;
+    box-shadow: 0 0 2rem 0 #504d8f;
+}
+/* #vaardigheden article */
+/* #webdesign section */
+#webdesign {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#webdesign h2 {
+    color: #39A2F5;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    text-align: center;
+}
+
+#webdesign h3 {
+    color: #D262EE;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    text-align: center;
+}
+
+#webdesign .container p {
+    color: #171056;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    text-align: center;
+}
+
+#webdesign .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#webdesign .container {
+    height: 14rem;
+    width: 12rem;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 40px rgba(60,60,150,0.25);
+    display: grid;
+    place-items: center;
+    margin: 1rem;
+}
+
+#webdesign .circular-progress {
+    position: relative;
+    height: 9rem;
+    width: 9rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+#webdesign .circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 84%;
+    width: 84%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#webdesign .value-container {
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+/* #others section */
+main #others {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 5rem;
+}
+
+main .others {
+    width: 18rem;
+    height: 20rem;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 40px rgba(60,60,150,0.25);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+main .others h3 {
+    color: #D262EE;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+
+main .others ul li {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #F9F9F9;
+    box-shadow: 0 0 20px black;
+    color: #171056;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+
+footer a {
+    color: #171056;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#adres {
+    padding-bottom: 0;
+}
+
+footer a:hover {
+    color: #D262EE;
+    font-weight: 400;
+}
+
+footer img {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+footer p {
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+footer #footer_phone img {
+    width: 10rem;
+    padding: 1rem;
+}
+
+#footer_phone, #footer_web {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    #footer_phone {
+        display: none;
+    }
+    #footer_web {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    main #home_tekst {
+        width: 100%;
+    }
+    main #home_foto {
+        display: none;
+    }
+    main #wiebenik_foto {
+        display: none;
+    }
+    main #wiebenik_uitleg {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1100px){
+    header #profile_name {
+        display: none;
+    }
+    main #home_tekst {
+        width: 100%;
+    }
+    main #home_foto {
+        display: none;
+    }
+    footer img {
+         width: 1.75rem;
+     }
+
+}
+
+@media screen and (max-width: 900px){
+    header #navbar a {
+        margin-left: 1rem;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #footer_phone {
+        display: block;
+    }
+    #footer_web {
+        display: none;
+    }
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    header #navbar a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header #navbar a {
+        font-size: 0.8rem;
+    }
+}

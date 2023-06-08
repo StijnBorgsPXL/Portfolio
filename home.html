@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="bootstrap-grid.min.css">
+    <meta name="viewport" content="width=device-width, initial-scal=1.0">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div id="profile">
+            <a href="home.html"><img src="assets/profile_pic.png" alt="Stijn Borgs"></a>
+            <a href="home.html" id="profile_name">Stijn Borgs</a>
+        </div>
+        <div id="navbar">
+            <a href="home.html" id="current_page">Home</a>
+            <a href="mijn_projecten.html">Mijn Projecten</a>
+            <a href="eindreflectie.html">Eindreflectie</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <article id="home">
+        <section id="home_tekst">
+            <h1>Portfolio WPL2</h1>
+            <h2>Ik ben <span>Stijn Borgs</span></h2>
+            <h3>Dit is mijn portfolio voor WPL2</h3>
+            <div id="knop">
+                <a href="#wiebenik">Wie ben ik?</a>
+            </div>
+            <a href="https://www.facebook.com" target="_blank"><img src="assets/icons/facebook.png"
+                                                                    alt="facebook"/></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="assets/icons/instagram.png"
+                                                                     alt="instagram"/></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="assets/icons/twitter.png"
+                                                                   alt="twitter"/></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="assets/icons/linkedin.png"
+                                                                    alt="linkedin"/></a>
+            <a href="https://www.github.com/StijnBorgsPXL" target="_blank"><img src="assets/icons/github.png"
+                                                                                alt="github"/></a>
+            <button onclick="openPopup()"><img src="assets/icons/mail.png" alt="stijnborgs@hotmail.com"/></button>
+            <div class="popup" id="popup">
+                <h3>E-mailadres</h3>
+                <p>stijnborgs@hotmail.com</p>
+                <button type="button" onclick="closePopup()">Sluiten</button>
+            </div>
+            <button onclick="openPopup2()"><img src="assets/icons/phone.png" alt="0497 38 96 97"/></button>
+            <div class="popup2" id="popup2">
+                <h3>Telefoonnummer</h3>
+                <p>0497 38 96 97</p>
+                <button type="button" onclick="closePopup2()">Sluiten</button>
+            </div>
+        </section>
+        <section id="home_foto">
+            <img src="assets/profile_pic.png" alt="Stijn Borgs">
+        </section>
+    </article>
+    <article id="wiebenik">
+        <section id="wiebenik_uitleg">
+            <h2>Wie ben ik?</h2>
+            <p>Hallo, ik ben Stijn, 22 jaar en woon in Hoepertingen. Ik studeer
+                momenteel Digitale Vormgeving aan Hogeschool PXL. Daarnaast
+                ben ik ook jobstudent als deliveryguy bij Let's Wok in Hasselt.
+                Mijn hobby's zijn voetbal, basketbal, reizen en op café gaan
+                met vrienden.</p>
+
+            <h3>Opleiding</h3>
+            <p><span class="paars">Middelbaar</span> | Sint Aloysius<br>
+                2012-2018, <span class="blauw">Ondernemen & Marketing</span></p>
+            <p><span class="paars">Hogeschool</span> | Hogeschool PXL<br>
+                2018-2019, <span class="blauw">Lerarenopleiding lager onderwijs</span></p>
+            <p><span class="paars">Hogeschool</span> | UCLL<br>
+                2019-2020, <span class="blauw">Sociale Readaptatiewetenschappen</span></p>
+            <p><span class="paars">Hogeschool</span> | Hogeschool PXL<br>
+                2020-2021, <span class="blauw">Toegepaste Informatica</span></p>
+            <p><span class="paars">Hogeschool</span> | Hogeschool PXL<br>
+                2021-heden, <span class="blauw">Digitale Vormgeving</span></p>
+
+            <h3>Werkervaring</h3>
+            <p><span class="paars">Jobstudent</span> | BARCA Baceries<br>
+                2019-2021, <span class="blauw">Verkoopsmedewerker</span></p>
+            <p><span class="paars">Jobstudent</span> | Let's Wok Hasselt<br>
+                2021-heden, <span class="blauw">Deliveryguy</span></p>
+        </section>
+        <section id="wiebenik_foto">
+            <img src="assets/mountain_photo.png" alt="mountain">
+        </section>
+    </article>
+    <article id="vaardigheden">
+        <section id="webdesign">
+            <h2>Vaardigheden</h2>
+            <h3>Webdesign/programmeren</h3>
+            <div class="flex-container">
+                <div class="container">
+                    <div class="circular-progress">
+                        <div class="value-container">0%</div>
+                    </div>
+                    <p>HTML</p>
+                </div>
+                <div class="container">
+                    <div class="circular-progress">
+                        <div class="value-container">0%</div>
+                    </div>
+                    <p>CSS</p>
+                </div>
+                <div class="container">
+                    <div class="circular-progress">
+                        <div class="value-container">0%</div>
+                    </div>
+                    <p>JavaScript</p>
+                </div>
+                <div class="container">
+                    <div class="circular-progress">
+                        <div class="value-container">0%</div>
+                    </div>
+                    <p>Adobe Photoshop</p>
+                </div>
+                <div class="container">
+                    <div class="circular-progress">
+                        <div class="value-container">0%</div>
+                    </div>
+                    <p>Adobe Illustrator</p>
+                </div>
+                <div class="container">
+                    <div class="circular-progress">
+                        <div class="value-container">0%</div>
+                    </div>
+                    <p>Adobe XD</p>
+                </div>
+            </div>
+        </section>
+        <section id="others">
+            <div class="others">
+                <h3>Diploma's & certificaten</h3>
+                <ul>
+                    <li>Rijbewijs B</li>
+                    <li>Diploma TSO - Ondernemen & Marketing</li>
+                    <li>Diploma bedrijfsbeheer</li>
+                    <li>ICT Attest</li>
+                    <li>Scheidsrechters diploma</li>
+                </ul>
+            </div>
+            <div class="others">
+                <h3>Soft skills</h3>
+                <ul>
+                    <li>Flexibel</li>
+                    <li>Sociaal</li>
+                    <li>Teamwork</li>
+                    <li>Leergierig</li>
+                    <li>Vriendelijk</li>
+                </ul>
+            </div>
+            <div class="others">
+                <h3>Talen</h3>
+                <ul>
+                    <li>Nederlands - moedertaal</li>
+                    <li>Frans - basis</li>
+                    <li>Engels - zeer goed</li>
+                    <li>Spaans - matig</li>
+                    <li>Duits - matig</li>
+                    <li>Afrikaans - matig</li>
+                </ul>
+            </div>
+        </section>
+    </article>
+    <div id="up_button">
+        <a href="#"><img src="assets/icons/up.png" alt="up"></a>
+    </div>
+</main>
+<footer>
+    <div class="container" id="footer_web">
+        <div class="row">
+            <div class="col-4 offset-1">
+                <h3>Portfolio Stijn Borgs</h3>
+            </div>
+            <div class="col-4">
+                <h3>Persoonlijke info</h3>
+            </div>
+            <div class="col-3">
+                <h3>Contact</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 offset-1">
+                <a href="home.html">Home</a><br>
+                <a href="mijn_projecten.html">Mijn projecten</a><br>
+                <a href="eindreflectie.html">Eindreflectie</a><br>
+
+            </div>
+            <div class="col-4">
+                <a>Stijn Borgs</a><br>
+                <a>07/12/2000</a><br>
+                <a id="adres">Bartholijnsstraat 4</a><br>
+                <a>3840 Hoepertingen</a><br>
+            </div>
+            <div class="col-3">
+                <a href="https://www.facebook.com" target="_blank"><img src="assets/icons/facebook.png"
+                                                                        alt="facebook"/></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="assets/icons/instagram.png"
+                                                                         alt="instagram"/></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="assets/icons/twitter.png"
+                                                                       alt="twitter"/></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="assets/icons/linkedin.png"
+                                                                        alt="linkedin"/></a><br>
+                <a href="https://www.github.com/StijnBorgsPXL" target="_blank"><img src="assets/icons/github.png"
+                                                                                    alt="github"/></a>
+                <a href="#"><img src="assets/icons/mail.png" alt="stijnborgs@hotmail.com"/></a>
+                <a href="#"><img src="assets/icons/phone.png" alt="0497 38 96 97"/></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <p>Copyright © Stijn Borgs</p>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="footer_phone">
+        <div class="row">
+            <div class="col12 text-center">
+                <a href="home.html"><img src="assets/profile_pic.png" alt="logo"/></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="home_progressbars.js"></script>
+<script src="pop_ups.js"></script>
+</body>
+
+</html>

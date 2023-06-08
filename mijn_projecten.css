@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato, sans-serif;
+}
+
+/* Header */
+header {
+    box-shadow: 0 0 20px 0 black;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #F9F9F9;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    font-size: 1.5rem;
+    font-family: "Comic Sans MS";
+    color: #171056;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header #navbar a {
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#current_page {
+    text-decoration: underline;
+}
+
+header nav a:hover {
+    color: #D262EE;
+}
+
+header img {
+    width: 4rem;
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+main #up_button a img {
+    width: 4rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+main #up_button a img:hover {
+    width: 5rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+/* Main */
+body {
+    background-image: url("assets/background.png");
+    background-size: 50%;
+    background-attachment: fixed;
+}
+
+main #alles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+main h2 {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: #39A2F5;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+main h3 {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: #D262EE;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main .project {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 1rem;
+    box-shadow: 20px 20px 40px rgba(60,60,150,0.25);
+    padding: 2rem;
+    margin-bottom: 5rem;
+}
+
+main .project::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+main .project::-webkit-scrollbar-track {
+    background-color: #d1e5ff;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+main .project::-webkit-scrollbar-thumb {
+    background: #39A2F5;
+    border-radius: 10px;
+
+}
+
+main .project h4 {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: #39A2F5;
+}
+
+main .project h4 span {
+    font-size: 0.75rem;
+    color: grey;
+}
+
+main .project img {
+    width: 100%;
+}
+
+main .project p {
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: #171056;
+    margin-top: 1rem;
+}
+
+main .project .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+main .project .icons img {
+    width: 4rem;
+}
+
+main .project .names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main .project .names a {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    color: #171056;
+    text-decoration: none;
+}
+
+main .project #oefeningen a {
+    color: #171056;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+    text-align: left;
+}
+
+main .project #oefeningen a:hover {
+    color: #D262EE;
+}
+
+/* Footer */
+footer {
+    background: #F9F9F9;
+    box-shadow: 0 0 20px black;
+    color: #171056;
+
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Comic Sans MS";
+    font-weight: bold;
+}
+
+footer a {
+    color: #171056;
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+#adres {
+    padding-bottom: 0;
+}
+
+footer a:hover {
+    color: #D262EE;
+    font-weight: 400;
+}
+
+footer img {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+footer p {
+    font-weight: bold;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+footer #footer_phone img {
+    width: 10rem;
+    padding: 1rem;
+}
+
+#footer_phone, #footer_web {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    #footer_phone {
+        display: none;
+    }
+    #footer_web {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    header #profile_name {
+        display: none;
+    }
+
+    footer img {
+        width: 1.75rem;
+    }
+    main .project {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    header #navbar a {
+        margin-left: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #footer_phone {
+        display: block;
+    }
+    #footer_web {
+        display: none;
+    }
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    header #navbar a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    header #navbar a {
+        font-size: 0.8rem;
+    }
+}
